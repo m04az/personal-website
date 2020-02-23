@@ -19,15 +19,13 @@
           @{{ user.login }}
         </a>
       </div>
-    {% endif %}
-    {% if user.email %}
+    {% endif %} 
       <div class="{{ metadata_styles }}">
         {% octicon mail height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:email %}
-        <a href="mailto:{{ user.email }}" {% if site.style == 'dark' %}class="text-white"{% endif %}>
-          {{ user.email }}
+        <a href="mailto:me@moaaz.dev        " {% if site.style == 'dark' %}class="text-white"{% endif %}>
+          me@moaaz.dev
         </a>
-      </div>
-    {% endif %}
+      </div> 
     {% if user.location %}
       <div class="{{ metadata_styles }} {% if site.style == 'dark' %}text-white{% endif %}">
         {% octicon location height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:Location %}
